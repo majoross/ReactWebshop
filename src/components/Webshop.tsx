@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Footer } from "./layout/Footer";
-import { Header } from "./layout/Header";
+import { Footer } from "./layout/Footer/Footer";
+import { Header } from "./layout/Header/Header";
 import "./Webshop.css";
 interface IProps {
   text: string;
