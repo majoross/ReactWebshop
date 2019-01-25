@@ -33,6 +33,13 @@ module.exports = {
         //   presets: ["es2015", "react"]
         // }
       },
+      {
+        // Preprocess your css files
+        // you can add additional loaders here (e.g. sass/less etc.)
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: ["style-loader", "css-loader"]
+      },
 
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }

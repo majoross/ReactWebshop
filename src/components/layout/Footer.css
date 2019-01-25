@@ -1,0 +1,6 @@
+.Footer {
+  display: flex;
+  align-items: flex-end;
+  background-color: #1f1f2e;
+  color: white;
+}
