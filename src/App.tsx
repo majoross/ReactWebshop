@@ -1,7 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Webshop } from "./components/Webshop";
 ReactDOM.render(
-  <Webshop text={"itt lesz a webshop"} />,
+  <BrowserRouter>
+    <Webshop />
+  </BrowserRouter>,
   document.getElementById("root")
 );

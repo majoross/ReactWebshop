@@ -2,15 +2,13 @@ import * as React from "react";
 import { Footer } from "./layout/Footer/Footer";
 import { Header } from "./layout/Header/Header";
 import "./Webshop.css";
-interface IProps {
-  text: string;
-}
+interface IProps {}
 export class Webshop extends React.Component<IProps, {}> {
   render() {
     return (
       <div className="Webshop">
         <Header />
-        <div className="Content">{this.props.text}</div>
+        <div className="Content" />
 
         <Footer />
       </div>
