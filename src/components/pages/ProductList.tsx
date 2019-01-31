@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./Webshop.css";
+import "./ProductList.css";
 interface IProps {}
 export class ProductList extends React.Component<IProps, {}> {
   render() {

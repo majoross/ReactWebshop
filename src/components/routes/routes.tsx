@@ -5,7 +5,7 @@ import { ProductList } from "../pages/ProductList";
 
 export default (
   <Switch>
-    <Route path="/" exact component={ProductList} />
+    <Route path="/products" component={ProductList} />
     <Route component={NotFound} />
   </Switch>
 );
