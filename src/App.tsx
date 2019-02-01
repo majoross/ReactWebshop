@@ -1,13 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import routes from "./components/routes/routes";
+import { MemoryRouter } from "react-router-dom";
 import { Webshop } from "./components/Webshop";
 ReactDOM.render(
-  <BrowserRouter>
-    <Webshop>
-      <div>{routes}</div>
-    </Webshop>
-  </BrowserRouter>,
+  <MemoryRouter>
+    <Webshop />
+  </MemoryRouter>,
   document.getElementById("root")
 );

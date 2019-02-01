@@ -8,9 +8,9 @@ export const NavBar = ({  }: Props) => {
   return (
     <div className={"NavBar"}>
       <NavButton link={"/"} value={"Home"} />
-      <NavButton link={"/"} value={"Categories"} />
-      <NavButton link={"/"} value={"About"} />
-      <NavButton link={"/"} value={"FAQ"} />
+      <NavButton link={"/products"} value={"Categories"} />
+      <NavButton link={"/paci"} value={"About"} />
+      <NavButton link={"/puki"} value={"FAQ"} />
     </div>
   );
 };
