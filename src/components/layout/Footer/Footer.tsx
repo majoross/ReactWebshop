@@ -4,6 +4,12 @@ import "./Footer.css";
 interface IProps {}
 export class Footer extends React.Component<IProps, {}> {
   render() {
-    return <div className="Footer">Footer, elég fasza!</div>;
+    return <div className="Footer">
+    <div className="footerContent">
+    <div className="text">
+    Footer, elég fasza!
+    </div>
+    </div>
+    </div>;
   }
 }

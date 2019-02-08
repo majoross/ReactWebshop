@@ -3,4 +3,9 @@
   align-items: flex-end;
   background-color: #1f1f2e;
   color: white;
+  height: 100px;
+  padding: 50px;
+}
+.Footer .footerContent {
+  height: 100%;
 }
