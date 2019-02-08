@@ -7,7 +7,7 @@ export class ProductList extends React.Component<IProps, {}> {
   render() {
     return (
       <div className="ProductList">
-        <div className="Content">ProductList</div>
+        <div className="productContent">ProductList</div>
         {products.product.map(p => (
           <ProductCard products={p} />
         ))}
