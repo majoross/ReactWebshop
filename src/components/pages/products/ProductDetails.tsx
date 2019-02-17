@@ -3,13 +3,14 @@ import { Product } from "../../../utils/products";
 import "./Product.css";
 
 interface IProps {
-  products: Product;
+  selectedProduct: Product;
 }
 export class ProductDetails extends React.Component<IProps> {
+
   render() {
-    const { products } = this.props;
+    const { selectedProduct } = this.props;
     return (
-      <div className="ProductDetails"></div>
+      <div className="ProductDetails">{selectedProduct.name}</div>
         
     );
   }

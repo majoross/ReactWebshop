@@ -4,10 +4,11 @@ import "./Product.css";
 import { Link } from "react-router-dom";
 
 interface IProps {
-  products: Product;
+  product: Product;
   selectedProduct: Product | null;
+  select: (product:Product)=>void;
 }
-export class ProductCard extends React.Component<IProps> {
+export class ProductCard extends React.Component<IProps, {selectedProduct: Product}> {
 constructor(props: IProps){
 super(props)
 this.state = {
@@ -16,20 +17,20 @@ this.state = {
 }
 
 chooseProduct(product:Product){
-  this.setState({selectedProduct: product});
+  this.props.select(product);
   console.log(this.state)
 }
   render() {
-    const { products } = this.props;
+    const { product } = this.props;
     return (
-      <Link className="productWrap"  to={products.category}>
-      <div onClick={()=>this.chooseProduct(products)} className="Product">
+      <Link className="productWrap"  to={"/productDetail"}>
+      <div onClick={()=>this.chooseProduct(product)} className="Product">
       <div className="productCardContent">
-      <img src={products.pictureUrl} className="productPicture"/>
+      <img src={product.pictureUrl} className="productPicture"/>
       <div className="texts">
-        <div className="name text">{products.name}</div>
-        <div className="price text">${products.price}</div>
-        <div className="description text">{products.description}</div>
+        <div className="name text">{product.name}</div>
+        <div className="price text">${product.price}</div>
+        <div className="description text">{product.description}</div>
         </div>
       </div>
       </div>
