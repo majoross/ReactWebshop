@@ -7,7 +7,7 @@ export class Footer extends React.Component<IProps, {}> {
     return <div className="Footer">
     <div className="footerContent">
     <div className="text">
-    Footer, elég fasza!
+    Footer, elég fasza!!!
     </div>
     </div>
     </div>;
