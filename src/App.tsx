@@ -1,7 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { MemoryRouter } from "react-router-dom";
 import { Webshop } from "./components/Webshop";
 ReactDOM.render(
-  <Webshop text={"itt lesz a webshop"} />,
+  <MemoryRouter>
+    <Webshop />
+  </MemoryRouter>,
   document.getElementById("root")
 );

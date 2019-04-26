@@ -1,0 +1,22 @@
+.ProductList {display: flex;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    justify-content: center;
+    width: 100%;
+}
+
+.ProductList .productContent{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.ProductList .title {
+    text-align: center;
+    margin: 20px;
+    color: #1f1f2e;
+    font-weight: 100
+}

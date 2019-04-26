@@ -1,0 +1,24 @@
+.NavButton {
+  display: flex;
+  padding: 15px;
+}
+
+.NavButton .button {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    min-width: 65px;
+    flex-direction: column;
+    text-decoration: none;
+    color: #ffbbec;
+  text-shadow: -0.5px 0 rgb(115, 156, 172), 0 0.5px rgb(115, 156, 172),
+    0.5px 0 rgb(115, 156, 172), 0 -0.5px rgb(115, 156, 172);
+    transition: all .2s ease-in-out;
+}
+
+.NavButton .button:hover{
+  transform: scale(1.1);
+  position: relative;
+
+}
